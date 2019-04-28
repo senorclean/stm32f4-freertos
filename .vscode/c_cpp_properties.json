@@ -4,7 +4,7 @@
             "name": "Linux",
             "includePath": [
                 "${workspaceFolder}/**",
-                "${workspaceFolder}/third_party/FreeRTOSv10.1.1/FreeRTOS/portable/GCC/ARM_CM4F",
+                "${workspaceFolder}/third_party/FreeRTOSv10.1.1/FreeRTOS/Source/portable/GCC/ARM_CM4F",
                 "${workspaceFolder}/third_party/FreeRTOSv10.1.1/FreeRTOS/Source/include",
                 "${workspaceFolder}/third_party/SEGGER/**"
             ],
