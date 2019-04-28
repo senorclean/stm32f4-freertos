@@ -1,4 +1,7 @@
-- Create a new git project with the cleaned up version
-- Modify the Makefile to flash the board with J-Link instead of ST-Flash (so I can leave J-Link on for debugging)
+- Improve the CMake file
+  - use file and GLOB so I don't need to manually add all the files
+  - consolidate the target_... stuff with the other stuff to make everything consistent
+  - add an extra target for cleaning and flashing
+  - figure out how to properly structure the CMake stuff in a real project so I don't need to go into build directory everytime to build project
 - Create a modular C++ interface for GPIO toggling
   - Write the class, etc and then figure out how to compile it separately with g++ and link them together afterwards
