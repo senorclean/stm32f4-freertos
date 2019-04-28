@@ -1,0 +1,56 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "cortex-debug",
+            "request": "launch",
+            "servertype": "jlink",
+            "cwd": "${workspaceRoot}",
+            "executable": "./_build/stm32f4.elf",
+            "name": "Debug (J-Link)",
+            "device": "STM32F407VG",
+            "interface": "swd",
+            "svdFile": "./util/STM32F407.svd",
+            "runToMain": true,
+            "ipAddress": null,
+        },
+        {
+            "name": "ARM GDB",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/_build/stm32f4.elf",
+            "args": [""],
+            "stopAtEntry": true,
+            "cwd": "${workspaceFolder}",
+            // "environment": [],
+            "externalConsole": false,
+            "MIMode": "gdb",
+            "debugServerArgs": "-f /usr/share/openocd/scripts/board/stm32f4discovery.cfg",
+            "debugServerPath": "openocd",
+            "serverLaunchTimeout": 20000,
+            "filterStderr": true,
+            "filterStdout": true,
+            // this should be the last thing openocd prints after it boots up
+            "serverStarted": "Info : clock speed 1800 kHz",
+            "miDebuggerPath": "/opt/gcc-8.2.1/bin/arm-none-eabi-gdb",
+            "miDebuggerArgs": "${workspaceFolder}/_build/stm32f4.elf",
+            "setupCommands": [
+                { "text": "set target-async off"},
+                { "text": "target remote localhost:3333"},
+                { "text": "mon reset halt"},
+                { "text": "load"},
+            ],
+            "logging": {
+                "moduleLoad": true,
+                "trace": true,
+                "engineLogging": true,
+                "programOutput": true,
+                "exceptions": true,
+                "traceResponse": true
+            }
+        }
+    ]
+}
