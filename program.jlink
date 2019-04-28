@@ -1,0 +1,5 @@
+h
+loadbin _build/stm32f4.hex, 0x8000000
+r
+g
+q

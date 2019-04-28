@@ -101,8 +101,7 @@ clean:
 # Flash the STM32F4
 flash:
 	@echo Programming device
-	$(STFLASH) write $(OUT_DIR)/$(PROJ_NAME).bin 0x8000000
-	$(STFLASH) --reset
+	JLinkExe -if swd -device STM32F407VG -speed 4000 -autoconnect 1 -CommanderScript program.jlink
 	@echo Done
 
 # Erase the STM32F4

@@ -26,6 +26,8 @@ int main(void) {
   DWT_CYCCNT = 0;
   DWT_CONTROL |= (1 << 0);
 
+  int i = 0;
+
   SEGGER_SYSVIEW_Conf();
   SEGGER_SYSVIEW_Start();
 
@@ -33,6 +35,7 @@ int main(void) {
   xTaskCreate(vTask2_handler, "task2", configMINIMAL_STACK_SIZE, NULL, 2, &xTaskHandle2);
 
   vTaskStartScheduler();
+
   while(1);
 }
 
