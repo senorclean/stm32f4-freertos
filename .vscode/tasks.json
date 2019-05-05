@@ -7,7 +7,7 @@
             "command": "make",
             // use options.cwd property if the Makefile is not in the project root ${workspaceRoot} dir
             "options": {
-                "cwd": "${workspaceRoot}"
+                "cwd": "${workspaceRoot}/build/build"
             },
             // start the build without prompting for task selection, use "group": "build" otherwise
             "group": {
@@ -42,7 +42,7 @@
             "command": "make",
             // use options.cwd property if the Makefile is not in the project root ${workspaceRoot} dir
             "options": {
-                "cwd": "${workspaceRoot}"
+                "cwd": "${workspaceRoot}/build/build"
             },
             // start the build without prompting for task selection, use "group": "build" otherwise
             "group": "build",
@@ -74,7 +74,7 @@
             "command": "make",
             // use options.cwd property if the Makefile is not in the project root ${workspaceRoot} dir
             "options": {
-                "cwd": "${workspaceRoot}"
+                "cwd": "${workspaceRoot}/build/build"
             },
             // start the build without prompting for task selection, use "group": "build" otherwise
             "group": "build",

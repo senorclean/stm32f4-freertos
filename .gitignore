@@ -1,4 +1,4 @@
 *.bin
 *.ipch
-_build/
+build/build/
 *.url

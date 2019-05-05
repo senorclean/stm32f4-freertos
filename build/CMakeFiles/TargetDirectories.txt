@@ -1,3 +1,0 @@
-/home/andrew/Projects/STM32F4_Development/stm32f4-freertos/build/CMakeFiles/rebuild_cache.dir
-/home/andrew/Projects/STM32F4_Development/stm32f4-freertos/build/CMakeFiles/edit_cache.dir
-/home/andrew/Projects/STM32F4_Development/stm32f4-freertos/build/CMakeFiles/stm32f4.elf.dir

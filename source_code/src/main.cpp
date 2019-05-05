@@ -11,7 +11,6 @@
 #define DWT_CYCCNT  (*(volatile uint32_t *)0xE0001004)
 #define DWT_DEMCR   (*(volatile uint32_t *)0xE000EDFC)
 
-
 TaskHandle_t xTaskHandle1 = NULL;
 TaskHandle_t xTaskHandle2 = NULL;
 
