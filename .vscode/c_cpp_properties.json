@@ -4,14 +4,13 @@
             "name": "Linux",
             "includePath": [
                 "${workspaceFolder}/**",
-                "${workspaceFolder}/third_party/FreeRTOSv10.1.1/FreeRTOS/Source/portable/GCC/ARM_CM4F",
-                "${workspaceFolder}/third_party/FreeRTOSv10.1.1/FreeRTOS/Source/include",
-                "${workspaceFolder}/third_party/SEGGER/**"
+                "${workspaceFolder}/source_code/third_party/freertos",
+                "${workspaceFolder}/source_code/third_party/segger/**"
             ],
             "defines": [],
-            "compilerPath": "/usr/bin/gcc",
+            "compilerPath": "/opt/gcc-8.2.1/bin/arm-none-eabi-gcc",
             "cStandard": "c11",
-            "cppStandard": "c++17",
+            "cppStandard": "c++11",
             "intelliSenseMode": "clang-x64"
         }
     ],

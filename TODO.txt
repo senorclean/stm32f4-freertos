@@ -1,2 +1,9 @@
+- Create a unit testing framework that runs on host (done in test dir)
+- Create a few tests that test specific functionality while mocking the hardware elements
+  - can't figure out how to modify the CMake file to include GMock (done)
+  - watch the gmock series on youtube (channel: codesbay) for a simple setup (done)
+- After testing/refactoring is done, create project for the target
+  - how to structure unit testing with respect to core project directory?
+- Add the tested code and supplement the HW side
+- Run the code on the target and make sure it works
 - Create a modular C++ interface for GPIO toggling
-  - Write the class, etc and then figure out how to compile it separately with g++ and link them together afterwards

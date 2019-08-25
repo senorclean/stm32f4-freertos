@@ -1,13 +1,45 @@
 {
     "version": "2.0.0",
     "tasks": [
+         {
+            "label": "cmake",
+            "type": "shell",
+            "command": "cmake",
+            // use options.cwd property if the Makefile is not in the project root ${workspaceRoot} dir
+            "options": {
+                "cwd": "${workspaceRoot}/source_code/build/build"
+            },
+            // start the build without prompting for task selection, use "group": "build" otherwise
+            "group": "build",
+            "presentation": {
+                "echo": true,
+                "reveal": "always",
+                "focus": false,
+                "panel": "shared"
+            },
+            // arg passing example: in this case is executed make QUIET=0
+            "args": ["../", "-DCMAKE_TOOLCHAIN_FILE=cross_compile.cmake"],
+            // Use the standard less compilation problem matcher.
+            "problemMatcher": {
+               "owner": "cpp",
+               "fileLocation": ["absolute"],
+               "pattern": {
+                   "regexp": "^(.*):(\\d+):(\\d+):\\s+(warning|error):\\s+(.*)$",
+                   "file": 1,
+                   "line": 2,
+                   "column": 3,
+                   "severity": 4,
+                   "message": 5
+               }
+            }
+        },
         {
             "label": "make",
             "type": "shell",
             "command": "make",
             // use options.cwd property if the Makefile is not in the project root ${workspaceRoot} dir
             "options": {
-                "cwd": "${workspaceRoot}/build/build"
+                "cwd": "${workspaceRoot}/source_code/build/build"
             },
             // start the build without prompting for task selection, use "group": "build" otherwise
             "group": {
@@ -37,12 +69,12 @@
             }
         },
         {
-            "label": "clean",
+            "label": "mr_clean",
             "type": "shell",
             "command": "make",
             // use options.cwd property if the Makefile is not in the project root ${workspaceRoot} dir
             "options": {
-                "cwd": "${workspaceRoot}/build/build"
+                "cwd": "${workspaceRoot}/source_code/build/build"
             },
             // start the build without prompting for task selection, use "group": "build" otherwise
             "group": "build",
@@ -53,7 +85,7 @@
                 "panel": "shared"
             },
             // arg passing example: in this case is executed make QUIET=0
-            "args": ["clean"],
+            "args": ["mr_clean"],
             // Use the standard less compilation problem matcher.
             "problemMatcher": {
                "owner": "cpp",
@@ -74,7 +106,7 @@
             "command": "make",
             // use options.cwd property if the Makefile is not in the project root ${workspaceRoot} dir
             "options": {
-                "cwd": "${workspaceRoot}/build/build"
+                "cwd": "${workspaceRoot}/source_code/build/build"
             },
             // start the build without prompting for task selection, use "group": "build" otherwise
             "group": "build",
