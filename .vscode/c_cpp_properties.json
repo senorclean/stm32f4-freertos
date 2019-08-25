@@ -5,7 +5,8 @@
             "includePath": [
                 "${workspaceFolder}/**",
                 "${workspaceFolder}/source_code/third_party/freertos",
-                "${workspaceFolder}/source_code/third_party/segger/**"
+                "${workspaceFolder}/source_code/third_party/segger/**",
+                "/usr/local/include"
             ],
             "defines": [],
             "compilerPath": "/opt/gcc-8.2.1/bin/arm-none-eabi-gcc",

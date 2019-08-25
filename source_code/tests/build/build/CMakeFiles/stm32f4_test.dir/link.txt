@@ -1,0 +1,1 @@
+/usr/bin/c++   -fno-rtti -fno-builtin -Wall -std=gnu++11 -fdata-sections -ffunction-sections -g -O0   CMakeFiles/stm32f4_test.dir/home/andrew/Projects/STM32F4_Development/stm32f4-freertos/source_code/tests/src/main_test.cpp.o  -o stm32f4_test -Wl,-rpath,/usr/local/lib /usr/local/lib/libgtest.so /usr/local/lib/libgmock.so -lpthread 

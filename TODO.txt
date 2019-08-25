@@ -1,4 +1,4 @@
-- Create a unit testing framework that runs on host (done in test dir)
+- Go through the GTest/GMock videos and get basic test running for the button task of main
 - Create a few tests that test specific functionality while mocking the hardware elements
   - can't figure out how to modify the CMake file to include GMock (done)
   - watch the gmock series on youtube (channel: codesbay) for a simple setup (done)
