@@ -20,7 +20,6 @@ void vTask2_handler(void *params);
 
 void vTaskLED(void *pvParameters);
 
-typedef port_pin< u32, u32, GPIOD, u32(PIN13)> port_d13;
 
 /***** Main Loop *************************************************************/
 int main() {
@@ -52,7 +51,7 @@ int main() {
 
   port_a0::set_direction_input();
   port_d12::set_direction_output();
-  port_d13::set_direction_output();
+  port_pin<u32, u32, GPIOD, u32(PIN13)>::set_direction_output();
 
   vTaskStartScheduler();
 
@@ -64,17 +63,15 @@ void vTask1_handler(void *params)
   uint32_t notif_value = 0;
   while(1) {
     if (xTaskNotifyWait(0, 0, &notif_value, portMAX_DELAY) == pdTRUE) {
-      port_d13::toggle();
+      port_pin<u32, u32, GPIOD, u32(PIN13)>::toggle();
     }
   }
 }
 
 void vTask2_handler(void *params)
 {
-  bool val;
   while(1) {
-    val = reg_access< u32, u32, GPIO_IDR(GPIOA), u32(PIN0)>::bit_get();
-    if (val & BIT_POS(0)) {
+    if(port_pin<u32, u32, GPIOA, u32(PIN0)>::read_input_value()) {
       vTaskDelay(100 / portTICK_PERIOD_MS);
       //xTaskNotify(xTaskHandle1, 0, eNoAction);
       xTaskNotify(xTaskHandle1, 0, eIncrement);

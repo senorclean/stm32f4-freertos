@@ -1,9 +1,5 @@
-- Go through the GTest/GMock videos and get basic test running for the button task of main
-- Create a few tests that test specific functionality while mocking the hardware elements
-  - can't figure out how to modify the CMake file to include GMock (done)
-  - watch the gmock series on youtube (channel: codesbay) for a simple setup (done)
-- After testing/refactoring is done, create project for the target
-  - how to structure unit testing with respect to core project directory?
+- Setup test framework for both button pressed and not pressed (TEST_F stuff)
+- Make the FreeRTOS/Register mock classes separate header files
 - Add the tested code and supplement the HW side
 - Run the code on the target and make sure it works
 - Create a modular C++ interface for GPIO toggling

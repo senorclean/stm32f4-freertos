@@ -327,9 +327,9 @@ class port_pin
     }
 
   private:
-    static constexpr addr_type pmode = GPIO_MODER(port);
-    static constexpr addr_type pinp = GPIO_IDR(port);
-    static constexpr addr_type pout = GPIO_ODR(port);
+    static constexpr addr_type pmode  = GPIO_MODER(port);
+    static constexpr addr_type pinp   = GPIO_IDR(port);
+    static constexpr addr_type pout   = GPIO_ODR(port);
 
     // type definition of the port mode register
     typedef reg_access<addr_type,
