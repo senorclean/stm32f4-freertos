@@ -147,6 +147,33 @@ mr_clean/fast:
 	$(MAKE) -f CMakeFiles/mr_clean.dir/build.make CMakeFiles/mr_clean.dir/build
 .PHONY : mr_clean/fast
 
+home/andrew/Projects/STM32F4_Development/stm32f4-freertos/source_code/tests/src/button_test.o: home/andrew/Projects/STM32F4_Development/stm32f4-freertos/source_code/tests/src/button_test.cpp.o
+
+.PHONY : home/andrew/Projects/STM32F4_Development/stm32f4-freertos/source_code/tests/src/button_test.o
+
+# target to build an object file
+home/andrew/Projects/STM32F4_Development/stm32f4-freertos/source_code/tests/src/button_test.cpp.o:
+	$(MAKE) -f CMakeFiles/stm32f4_test.dir/build.make CMakeFiles/stm32f4_test.dir/home/andrew/Projects/STM32F4_Development/stm32f4-freertos/source_code/tests/src/button_test.cpp.o
+.PHONY : home/andrew/Projects/STM32F4_Development/stm32f4-freertos/source_code/tests/src/button_test.cpp.o
+
+home/andrew/Projects/STM32F4_Development/stm32f4-freertos/source_code/tests/src/button_test.i: home/andrew/Projects/STM32F4_Development/stm32f4-freertos/source_code/tests/src/button_test.cpp.i
+
+.PHONY : home/andrew/Projects/STM32F4_Development/stm32f4-freertos/source_code/tests/src/button_test.i
+
+# target to preprocess a source file
+home/andrew/Projects/STM32F4_Development/stm32f4-freertos/source_code/tests/src/button_test.cpp.i:
+	$(MAKE) -f CMakeFiles/stm32f4_test.dir/build.make CMakeFiles/stm32f4_test.dir/home/andrew/Projects/STM32F4_Development/stm32f4-freertos/source_code/tests/src/button_test.cpp.i
+.PHONY : home/andrew/Projects/STM32F4_Development/stm32f4-freertos/source_code/tests/src/button_test.cpp.i
+
+home/andrew/Projects/STM32F4_Development/stm32f4-freertos/source_code/tests/src/button_test.s: home/andrew/Projects/STM32F4_Development/stm32f4-freertos/source_code/tests/src/button_test.cpp.s
+
+.PHONY : home/andrew/Projects/STM32F4_Development/stm32f4-freertos/source_code/tests/src/button_test.s
+
+# target to generate assembly for a file
+home/andrew/Projects/STM32F4_Development/stm32f4-freertos/source_code/tests/src/button_test.cpp.s:
+	$(MAKE) -f CMakeFiles/stm32f4_test.dir/build.make CMakeFiles/stm32f4_test.dir/home/andrew/Projects/STM32F4_Development/stm32f4-freertos/source_code/tests/src/button_test.cpp.s
+.PHONY : home/andrew/Projects/STM32F4_Development/stm32f4-freertos/source_code/tests/src/button_test.cpp.s
+
 home/andrew/Projects/STM32F4_Development/stm32f4-freertos/source_code/tests/src/main_test.o: home/andrew/Projects/STM32F4_Development/stm32f4-freertos/source_code/tests/src/main_test.cpp.o
 
 .PHONY : home/andrew/Projects/STM32F4_Development/stm32f4-freertos/source_code/tests/src/main_test.o
@@ -185,6 +212,9 @@ help:
 	@echo "... test"
 	@echo "... mr_clean"
 	@echo "... edit_cache"
+	@echo "... home/andrew/Projects/STM32F4_Development/stm32f4-freertos/source_code/tests/src/button_test.o"
+	@echo "... home/andrew/Projects/STM32F4_Development/stm32f4-freertos/source_code/tests/src/button_test.i"
+	@echo "... home/andrew/Projects/STM32F4_Development/stm32f4-freertos/source_code/tests/src/button_test.s"
 	@echo "... home/andrew/Projects/STM32F4_Development/stm32f4-freertos/source_code/tests/src/main_test.o"
 	@echo "... home/andrew/Projects/STM32F4_Development/stm32f4-freertos/source_code/tests/src/main_test.i"
 	@echo "... home/andrew/Projects/STM32F4_Development/stm32f4-freertos/source_code/tests/src/main_test.s"

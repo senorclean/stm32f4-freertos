@@ -1,5 +1,2 @@
-- Setup test framework for both button pressed and not pressed (TEST_F stuff)
-- Make the FreeRTOS/Register mock classes separate header files
-- Add the tested code and supplement the HW side
-- Run the code on the target and make sure it works
-- Create a modular C++ interface for GPIO toggling
+- Go through the original C project I made and re-think the architecture and document it
+- From these modules, start writing unit tests for everything abstract away the HAL

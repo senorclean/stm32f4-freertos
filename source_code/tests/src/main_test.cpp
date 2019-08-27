@@ -1,53 +1,13 @@
-#include <iostream>
+/* Copyright Andrew Parsons 2019 */
+
 #include <gtest/gtest.h>
 #include <gmock/gmock.h>
-#include <string>
-
-
-class RegisterClass {
-public:
-  MOCK_METHOD0(read_input_value, bool());
-};
-
-class RTOSClass {
-public:
-  MOCK_METHOD1(vTaskDelay, void (int delay));
-  MOCK_METHOD3(xTaskNotify, void (int handle, int value, int incr));
-};
-
-class ButtonClass : public RegisterClass, public RTOSClass {
-public:
-  void read_button() {
-    if (RegisterClass::read_input_value()) {
-      RTOSClass::vTaskDelay(100);
-      //xTaskNotify(xTaskHandle1, 0, eNoAction);
-      RTOSClass::xTaskNotify(1, 0, 2);
-    }
-  }
-};
-
-
-TEST(ButtonTest, ButtonTestInput) {
-  // setup
-  ButtonClass button;
-
-  // expect
-  EXPECT_CALL(button, read_input_value())
-  .WillOnce(testing::Return(true));
-
-  EXPECT_CALL(button, vTaskDelay(100))
-  .Times(1);
-
-  EXPECT_CALL(button, xTaskNotify(1, 0, 2))
-  .Times(1);
-
-  // run
-  button.read_button();
-}
+#include "button_test.hpp"
 
 int main(int argc, char **argv) {
   testing::InitGoogleMock(&argc, argv);
   testing::InitGoogleTest(&argc, argv);
+  // testing::GTEST_FLAG(filter) = "ButtonTests*";
   return RUN_ALL_TESTS();
 }
 

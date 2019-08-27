@@ -6,15 +6,39 @@
 
 #IncludeRegexTransform: 
 
-/home/andrew/Projects/STM32F4_Development/stm32f4-freertos/source_code/tests/src/main_test.cpp
-iostream
+../../inc/button_test.hpp
+freertos_test.hpp
+../../inc/freertos_test.hpp
+register_test.hpp
+../../inc/register_test.hpp
+
+../../inc/freertos_test.hpp
+gmock/gmock.h
 -
+
+../../inc/register_test.hpp
+gmock/gmock.h
+-
+
+/home/andrew/Projects/STM32F4_Development/stm32f4-freertos/source_code/tests/src/button_test.cpp
+gmock/gmock.h
+-
+gtest/gtest.h
+-
+freertos_test.hpp
+/home/andrew/Projects/STM32F4_Development/stm32f4-freertos/source_code/tests/src/freertos_test.hpp
+register_test.hpp
+/home/andrew/Projects/STM32F4_Development/stm32f4-freertos/source_code/tests/src/register_test.hpp
+button_test.hpp
+/home/andrew/Projects/STM32F4_Development/stm32f4-freertos/source_code/tests/src/button_test.hpp
+
+/home/andrew/Projects/STM32F4_Development/stm32f4-freertos/source_code/tests/src/main_test.cpp
 gtest/gtest.h
 -
 gmock/gmock.h
 -
-string
--
+button_test.hpp
+/home/andrew/Projects/STM32F4_Development/stm32f4-freertos/source_code/tests/src/button_test.hpp
 
 /usr/local/include/gmock/gmock-actions.h
 errno.h

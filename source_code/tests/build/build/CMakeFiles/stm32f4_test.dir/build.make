@@ -57,9 +57,33 @@ include CMakeFiles/stm32f4_test.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/stm32f4_test.dir/flags.make
 
+CMakeFiles/stm32f4_test.dir/home/andrew/Projects/STM32F4_Development/stm32f4-freertos/source_code/tests/src/button_test.cpp.o: CMakeFiles/stm32f4_test.dir/flags.make
+CMakeFiles/stm32f4_test.dir/home/andrew/Projects/STM32F4_Development/stm32f4-freertos/source_code/tests/src/button_test.cpp.o: /home/andrew/Projects/STM32F4_Development/stm32f4-freertos/source_code/tests/src/button_test.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/andrew/Projects/STM32F4_Development/stm32f4-freertos/source_code/tests/build/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/stm32f4_test.dir/home/andrew/Projects/STM32F4_Development/stm32f4-freertos/source_code/tests/src/button_test.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/stm32f4_test.dir/home/andrew/Projects/STM32F4_Development/stm32f4-freertos/source_code/tests/src/button_test.cpp.o -c /home/andrew/Projects/STM32F4_Development/stm32f4-freertos/source_code/tests/src/button_test.cpp
+
+CMakeFiles/stm32f4_test.dir/home/andrew/Projects/STM32F4_Development/stm32f4-freertos/source_code/tests/src/button_test.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/stm32f4_test.dir/home/andrew/Projects/STM32F4_Development/stm32f4-freertos/source_code/tests/src/button_test.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/andrew/Projects/STM32F4_Development/stm32f4-freertos/source_code/tests/src/button_test.cpp > CMakeFiles/stm32f4_test.dir/home/andrew/Projects/STM32F4_Development/stm32f4-freertos/source_code/tests/src/button_test.cpp.i
+
+CMakeFiles/stm32f4_test.dir/home/andrew/Projects/STM32F4_Development/stm32f4-freertos/source_code/tests/src/button_test.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/stm32f4_test.dir/home/andrew/Projects/STM32F4_Development/stm32f4-freertos/source_code/tests/src/button_test.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/andrew/Projects/STM32F4_Development/stm32f4-freertos/source_code/tests/src/button_test.cpp -o CMakeFiles/stm32f4_test.dir/home/andrew/Projects/STM32F4_Development/stm32f4-freertos/source_code/tests/src/button_test.cpp.s
+
+CMakeFiles/stm32f4_test.dir/home/andrew/Projects/STM32F4_Development/stm32f4-freertos/source_code/tests/src/button_test.cpp.o.requires:
+
+.PHONY : CMakeFiles/stm32f4_test.dir/home/andrew/Projects/STM32F4_Development/stm32f4-freertos/source_code/tests/src/button_test.cpp.o.requires
+
+CMakeFiles/stm32f4_test.dir/home/andrew/Projects/STM32F4_Development/stm32f4-freertos/source_code/tests/src/button_test.cpp.o.provides: CMakeFiles/stm32f4_test.dir/home/andrew/Projects/STM32F4_Development/stm32f4-freertos/source_code/tests/src/button_test.cpp.o.requires
+	$(MAKE) -f CMakeFiles/stm32f4_test.dir/build.make CMakeFiles/stm32f4_test.dir/home/andrew/Projects/STM32F4_Development/stm32f4-freertos/source_code/tests/src/button_test.cpp.o.provides.build
+.PHONY : CMakeFiles/stm32f4_test.dir/home/andrew/Projects/STM32F4_Development/stm32f4-freertos/source_code/tests/src/button_test.cpp.o.provides
+
+CMakeFiles/stm32f4_test.dir/home/andrew/Projects/STM32F4_Development/stm32f4-freertos/source_code/tests/src/button_test.cpp.o.provides.build: CMakeFiles/stm32f4_test.dir/home/andrew/Projects/STM32F4_Development/stm32f4-freertos/source_code/tests/src/button_test.cpp.o
+
+
 CMakeFiles/stm32f4_test.dir/home/andrew/Projects/STM32F4_Development/stm32f4-freertos/source_code/tests/src/main_test.cpp.o: CMakeFiles/stm32f4_test.dir/flags.make
 CMakeFiles/stm32f4_test.dir/home/andrew/Projects/STM32F4_Development/stm32f4-freertos/source_code/tests/src/main_test.cpp.o: /home/andrew/Projects/STM32F4_Development/stm32f4-freertos/source_code/tests/src/main_test.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/andrew/Projects/STM32F4_Development/stm32f4-freertos/source_code/tests/build/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/stm32f4_test.dir/home/andrew/Projects/STM32F4_Development/stm32f4-freertos/source_code/tests/src/main_test.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/andrew/Projects/STM32F4_Development/stm32f4-freertos/source_code/tests/build/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/stm32f4_test.dir/home/andrew/Projects/STM32F4_Development/stm32f4-freertos/source_code/tests/src/main_test.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/stm32f4_test.dir/home/andrew/Projects/STM32F4_Development/stm32f4-freertos/source_code/tests/src/main_test.cpp.o -c /home/andrew/Projects/STM32F4_Development/stm32f4-freertos/source_code/tests/src/main_test.cpp
 
 CMakeFiles/stm32f4_test.dir/home/andrew/Projects/STM32F4_Development/stm32f4-freertos/source_code/tests/src/main_test.cpp.i: cmake_force
@@ -83,17 +107,19 @@ CMakeFiles/stm32f4_test.dir/home/andrew/Projects/STM32F4_Development/stm32f4-fre
 
 # Object files for target stm32f4_test
 stm32f4_test_OBJECTS = \
+"CMakeFiles/stm32f4_test.dir/home/andrew/Projects/STM32F4_Development/stm32f4-freertos/source_code/tests/src/button_test.cpp.o" \
 "CMakeFiles/stm32f4_test.dir/home/andrew/Projects/STM32F4_Development/stm32f4-freertos/source_code/tests/src/main_test.cpp.o"
 
 # External object files for target stm32f4_test
 stm32f4_test_EXTERNAL_OBJECTS =
 
+stm32f4_test: CMakeFiles/stm32f4_test.dir/home/andrew/Projects/STM32F4_Development/stm32f4-freertos/source_code/tests/src/button_test.cpp.o
 stm32f4_test: CMakeFiles/stm32f4_test.dir/home/andrew/Projects/STM32F4_Development/stm32f4-freertos/source_code/tests/src/main_test.cpp.o
 stm32f4_test: CMakeFiles/stm32f4_test.dir/build.make
 stm32f4_test: /usr/local/lib/libgtest.so
 stm32f4_test: /usr/local/lib/libgmock.so
 stm32f4_test: CMakeFiles/stm32f4_test.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/andrew/Projects/STM32F4_Development/stm32f4-freertos/source_code/tests/build/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable stm32f4_test"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/andrew/Projects/STM32F4_Development/stm32f4-freertos/source_code/tests/build/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable stm32f4_test"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/stm32f4_test.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -101,6 +127,7 @@ CMakeFiles/stm32f4_test.dir/build: stm32f4_test
 
 .PHONY : CMakeFiles/stm32f4_test.dir/build
 
+CMakeFiles/stm32f4_test.dir/requires: CMakeFiles/stm32f4_test.dir/home/andrew/Projects/STM32F4_Development/stm32f4-freertos/source_code/tests/src/button_test.cpp.o.requires
 CMakeFiles/stm32f4_test.dir/requires: CMakeFiles/stm32f4_test.dir/home/andrew/Projects/STM32F4_Development/stm32f4-freertos/source_code/tests/src/main_test.cpp.o.requires
 
 .PHONY : CMakeFiles/stm32f4_test.dir/requires

@@ -3,9 +3,10 @@
         {
             "name": "Linux",
             "includePath": [
-                "${workspaceFolder}/**",
+                "${workspaceFolder}/inc",
                 "${workspaceFolder}/source_code/third_party/freertos",
                 "${workspaceFolder}/source_code/third_party/segger/**",
+                "${workspaceFolder}/source_code/tests/inc",
                 "/usr/local/include"
             ],
             "defines": [],
